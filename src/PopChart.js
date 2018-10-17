@@ -6,6 +6,7 @@ class PopChart extends React.Component{
   super(props)
 
  this.state = {
+  btnLabel: true,
   options: {
    chart: {
     background: '#f4f4f4',
@@ -64,15 +65,34 @@ class PopChart extends React.Component{
   ]
  }
  }
+
+rotateHandler = () => {
+ this.setState({options: {
+  ...this.state.options,
+  plotOptions: {
+   ...this.state.options.plotOptions,
+   bar: {
+    ...this.state.options.plotOptions.bar, 
+     horizontal: !this.state.options.plotOptions.bar.horizontal  
+   }
+  } 
+ },
+  btnLabel: !this.state.btnLabel
+ })
+}
+
  render(){
   return(
-   <Chart 
+   <React.Fragment>
+    <Chart 
     options={this.state.options}
     series={this.state.series}
     type="bar"
     height="450"
     width="100%"
    />
+    <button onClick={this.rotateHandler}>{this.state.btnLabel === false ? 'Vertical' : 'Horizontal'}</button>
+   </React.Fragment>
   )
  }
 }
