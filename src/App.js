@@ -1,3 +1,4 @@
 import * as React from 'react'
+import PopChart from './PopChart'
 
-export default () => <h1>App!</h1>
+export default () => <PopChart />
