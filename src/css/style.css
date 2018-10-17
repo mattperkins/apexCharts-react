@@ -15,3 +15,9 @@ body{
  width: 80%;
  text-align: center;
 }
+button{
+ border: 1px solid var(--btn-primary);
+ padding: 9px;
+ outline: none;
+ width: 85px;
+}
