@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "apexcharts": "^2.1.4",
     "dotenv": "^6.0.0",
-    "pg": "^7.4.3"
+    "pg": "^7.4.3",
+    "react": "^16.4.2",
+    "react-apexcharts": "^1.0.9",
+    "react-dom": "^16.4.2"
   },
   "devDependencies": {
     "react-scripts": "1.1.4"
