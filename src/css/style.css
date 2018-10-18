@@ -10,7 +10,7 @@ body{
  background-color: var(--bgGrey);
 }
 .container{
- margin: 70px auto; 
+ margin: 10px auto; 
  overflow: hidden;
  width: 80%;
  text-align: center;
