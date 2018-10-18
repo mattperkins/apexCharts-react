@@ -7,11 +7,21 @@ class PopChart extends React.Component{
 
  this.state = {
   btnLabel: true,
+  // Apex config
   options: {
    chart: {
     background: '#f4f4f4',
-    foreColor: '333'
+    foreColor: '#333',
+    fontSize: '25px'
    },
+   responsive: [{
+    breakpoint: 1000,
+    options: {
+     chart: {
+      fontSize: '12px'
+     }
+    }
+   }],
    xaxis: {
     categories: [
      'New York',
@@ -42,7 +52,7 @@ class PopChart extends React.Component{
      margin: 20,
      offsetY: 20,
      style: {
-      fontSize: '25px'
+      fontSize: '1.4rem'
      }
    },
   },
