@@ -23,6 +23,7 @@ class PopChart extends React.Component{
     }
    }],
    xaxis: {
+    type: 'categories',
     categories: [
      'New York',
      'Los Angeles',
@@ -33,18 +34,23 @@ class PopChart extends React.Component{
      'San Diego',
      'Dallas',
      'San Jose'
-    ]
+    ],
+    labels: {
+     show: true,
+     rotate: -45
+    }
    },
    plotOptions: {
     bar: {
-     horizontal: false 
+     horizontal: false,
+     dataLabels: { position: 'top'} 
     }
    },
    fill: {
     colors: ['#f44336']
    },
    dataLabels: {
-    enabled: false
+    enabled: false 
    },
    title: {
      text: 'Largest US Cities By Population',
@@ -73,10 +79,13 @@ class PopChart extends React.Component{
     ]
    }
   ]
- }
- }
+  
+  
+ } //state
+ } // constructor
 
 rotateHandler = () => {
+   
  this.setState({options: {
   ...this.state.options,
   plotOptions: {
@@ -85,7 +94,7 @@ rotateHandler = () => {
     ...this.state.options.plotOptions.bar, 
      horizontal: !this.state.options.plotOptions.bar.horizontal  
    }
-  } 
+  }
  },
   btnLabel: !this.state.btnLabel
  })
