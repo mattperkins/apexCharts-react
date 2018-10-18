@@ -6,7 +6,7 @@ class PopChart extends React.Component{
   super(props)
 
  this.state = {
-  btnLabel: true,
+  btnLabel: false,
   // Apex config
   options: {
    chart: {
@@ -33,7 +33,7 @@ class PopChart extends React.Component{
    },
    plotOptions: {
     bar: {
-     horizontal: false,
+     horizontal: true,
      dataLabels: { position: 'top'} 
     }
    },
