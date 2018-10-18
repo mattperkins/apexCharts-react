@@ -21,3 +21,7 @@ button{
  outline: none;
  width: 85px;
 }
+x-axis{
+ font-size: 12px;
+ color: red;
+}
