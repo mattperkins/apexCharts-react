@@ -12,16 +12,7 @@ class PopChart extends React.Component{
    chart: {
     background: '#f4f4f4',
     foreColor: '#333',
-    fontSize: '25px'
    },
-   responsive: [{
-    breakpoint: 1000,
-    options: {
-     chart: {
-      fontSize: '12px'
-     }
-    }
-   }],
    xaxis: {
     type: 'categories',
     categories: [
@@ -77,8 +68,10 @@ class PopChart extends React.Component{
      1300092,
      1026908
     ]
+    
    }
-  ]
+  ] // series
+   
   
   
  } //state
